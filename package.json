@@ -1,0 +1,16 @@
+{
+	"name": "hacker-news",
+	"version": "1.0.0",
+	"description": "A Hacker news clone made with next.js",
+	"main": "server.js",
+	"scripts": {
+		"dev": "next"
+	},
+	"author": "Sahil H. Mobaidin",
+	"license": "ISC",
+	"dependencies": {
+		"next": "^7.0.2",
+		"react": "^16.6.3",
+		"react-dom": "^16.6.3"
+	}
+}
