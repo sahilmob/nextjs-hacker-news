@@ -9,7 +9,7 @@ const StoryList = ({ stories }) => {
           <div className="story-details">
             <span>{story.points || 0} points</span>
             <Link href={`/story?id=${story.id}`}>
-              <a>{story.comment_counts || 0} comments</a>
+              <a>{story.comments_count || 0} comments</a>
             </Link>
           </div>
         </div>
