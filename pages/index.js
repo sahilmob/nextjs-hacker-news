@@ -2,6 +2,7 @@ import fetch from "isomorphic-fetch";
 import React, { Component } from "react";
 import Error from "next/error";
 
+import Layout from "../components/Layout";
 import StoryList from "../components/StoryList";
 
 export default class Index extends Component {
@@ -24,10 +25,12 @@ export default class Index extends Component {
 			return <Error statusCode={503} />;
 		}
 		return (
-			<div>
-				<h1>hacker next</h1>
+			<Layout
+				title="Hacker Next"
+				description="A Hacker News clone made with Next.js"
+			>
 				<StoryList stories={stories} />
-			</div>
+			</Layout>
 		);
 	}
 }
