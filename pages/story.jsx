@@ -28,7 +28,7 @@ export default class story extends React.Component {
       return <Error statusCode={503} />
     }
     return (
-      <Layout title={story.title}>
+      <Layout title={story.title} backButton={true}>
         <main>
           <h1 className="story-title">
             <a href={story.url}>{story.title}</a>
