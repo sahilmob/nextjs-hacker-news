@@ -2,6 +2,7 @@ import fetch from 'isomorphic-fetch';
 import Error from 'next/error';
 
 import Layout from '../components/Layout'
+import CommentList from '../components/CommentList'
 
 export default class story extends React.Component {
 
@@ -37,6 +38,10 @@ export default class story extends React.Component {
             <strong>{story.comments_count} comments</strong>
             <strong>{story.time_Age}</strong>
           </div>
+          {story.comments.length > 0 ?
+            <CommentList comments={story.comments} /> :
+            <div>No comments</div>
+          }
         </main>
 
         <style jsx>
