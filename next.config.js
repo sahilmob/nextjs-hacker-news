@@ -1,4 +1,5 @@
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
+module.exports = withCSS();
 
 module.exports = {
 	webpack: config => {
